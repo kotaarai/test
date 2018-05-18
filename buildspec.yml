@@ -8,8 +8,8 @@ phases:
       - REPOSITORY_URI=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME
       - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
       - echo $CODEBUILD_SOURCE_VERSION
-      - IMAGE_TAG=$(git rev-parse --short HEAD)
-      - echo $IMAGE_TAG
+#      - IMAGE_TAG=$(git rev-parse --short HEAD)
+#      - echo $IMAGE_TAG
   build:
     commands:
       - echo Build started on `date`
